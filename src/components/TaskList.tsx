@@ -15,18 +15,18 @@ export function TaskList() {
   const [newTaskTitle, setNewTaskTitle] = useState("");
 
   function handleCreateNewTask() {
-
-    if (!newTaskTitle) return;
-
-    setTasks((oldState) => [...oldState, newTask]);
-    setNewTaskTitle("");
-
     const newTask = {
       id: Math.random(),
       title: newTaskTitle,
       isComplete: false,
     };
 
+    if (!newTaskTitle) {
+      alert("Insira o titulo da task")
+    } else {
+      setTasks((oldState) => [...oldState, newTask]);
+      setNewTaskTitle("");
+    }
   }
 
   function handleToggleTaskCompletion(id: number) {
@@ -63,6 +63,7 @@ export function TaskList() {
             data-testid="add-task-button"
             onClick={handleCreateNewTask}
           >
+
             <FiCheckSquare size={16} color="#fff" />
           </button>
         </div>
