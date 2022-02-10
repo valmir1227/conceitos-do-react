@@ -1,6 +1,9 @@
-# To Do
+<div align="center">
+  
+# *< To Do />*
+  
 <hr>
-<img src="../github.desktop.png">
+<img src="https://github.com/valmir1227/conceitos-do-react/blob/main/.github/desktop.png?raw=true">
 
 ### ℹ️ About
 
@@ -8,8 +11,12 @@ Application passed as a challenge by @rocketseat, where the objective was to str
 
 <hr>
 
-### Objective
+### 🧐 Objective
 
-Allow add, removing and marking as read for tasks.
+ Add new tasks ✔️
+ Mark tasks as complete ✔️
+ Delete tasks ✔️
 <hr>
+  
+</div>
 
